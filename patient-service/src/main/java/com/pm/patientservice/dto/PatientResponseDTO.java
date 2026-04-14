@@ -1,4 +1,5 @@
 package com.pm.patientservice.dto;
+import java.util.UUID;
 
 public class PatientResponseDTO {
     private String Id;
