@@ -1,0 +1,15 @@
+### Creates a new Patient and posts it into the db
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+
+//this is the body of the request , this gets converted to a requestDTO
+{
+  "name" : "Nikhil" ,
+  "email" : "nikhichanda.nc@gmail.com",
+  "address" : "123 main street" ,
+  "dateOfBirth": "2005-09-24" ,
+  "registeredDate": "2016-07-07"
+}
+
+###
