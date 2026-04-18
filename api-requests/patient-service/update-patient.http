@@ -1,5 +1,14 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### updates a  Patient
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174013
+Content-Type: application/json
+
+
+//this is the body of the request , this gets converted to a requestDTO
+{
+  "name" : "Sahithi" ,
+  "email" : "sahithi.akula@gmail.com",
+  "address" : "123 main street , Bachupally" ,
+  "dateOfBirth": "2005-11-26"
+}
 
 ###
