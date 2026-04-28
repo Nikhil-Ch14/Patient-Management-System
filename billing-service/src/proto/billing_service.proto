@@ -1,0 +1,28 @@
+syntax= "proto3";
+
+option java_multiple_files =true;
+option java_package="billing" ;
+
+service BillingService{
+  rpc CreateBillingAccount ( BillingRequest) returns (BillingResponse);
+}
+
+//kind of like a dto
+message BillingRequest{
+  string patientId=1; //serialization
+  string name=2;
+  string email=3;
+
+
+}
+
+
+message BillingResponse{
+  string accountId =1;
+  string status = 2 ;
+}
+
+//after build maven plugin will generate the code for all the classes
+// automatically and all the classes will be stored in the billing package
+//compile this code , the result will be store in target
+//grpc uses binary not json , much faster and best for microservices communication
