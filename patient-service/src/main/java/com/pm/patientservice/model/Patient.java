@@ -20,6 +20,7 @@ public class Patient {
     private String name;
 
     @NotNull
+    @Column(unique=true)
     @Email
 
     private String email;
